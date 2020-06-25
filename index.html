@@ -28,7 +28,35 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,500,600,700,800'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,500,600,700,800'>
+	
+	<style>
+		.speech-bubble {
+			background: #6495ED; /* el color de fondo */
+			color: #FFF; /* el color del texto */
+			font-family: Arial, Sans-serif;
+			font-size: 12px;
+			padding: 20px 10px 10px 10px;
+			text-align: center;
+			width: 200px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			}
+			.speech-bubble:after {
+			border: solid 10px transparent;
+			border-top-color: #6495ED;  /* igual al color de fondo */
+			border-bottom: 0;
+			bottom: -20px;  /* igual al borde + el padding-bottom de la definición anterior */
+			content: "";
+			display: block;
+			height: 0;
+			margin: auto;
+			overflow: hidden;
+			position: relative;
+			width: 0;
+			}
+	</style>
 </head>
 
 
@@ -55,7 +83,7 @@
 	<!-- BEGIN NAVBAR -->
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
-			  <a class="navbar-brand" href="#home"><img src="images/Mira-Logo.png" width="20%" height="20%" class="img-circle" href="#home"> MIRA</a>
+			  <a class="navbar-brand" href="#home"><img src="images/Mira-Logo.png" width="20%" height="20%"  href="#home"> MIRA</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
 	                <span class="sr-only"></span>
 	                <span class="icon-bar"></span>
@@ -166,8 +194,8 @@
 			<!-- service internet-marketing -->
 			<div class="internet-marketing block wow softFadeInUp animated col-md-4" data-wow-delay=".7s">
 
-				<div class="iconXlg circle radial-out">
-					<i class="fas fa-hammer"></i>
+				<div class="iconXlg circle radial-out" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">
+					<i class="fas fa-hammer" style="cursor: pointer"></i>
 				</div>
 
 				<div class="service-title">
@@ -297,7 +325,7 @@
 		<div class="page-header clearfix wow softFadeInUp animated" data-wow-delay=".5s">
 			<h2>Calidad Total</h2>
 			<div class="lead">
-				Hoy en día, la calidad es parte fundamental de la filosofía de negocios de MIRA. , desde nuestro inicio hace 14 años tenemos establecida una política de calidad que enmarca todas nuestras actividades:.
+				Hoy en día, la calidad es parte fundamental de la filosofía de negocios de MIRA, desde nuestro inicio hace 14 años tenemos establecida una política de calidad que enmarca todas nuestras actividades:.
 				<br><br>
 				Satisfacción total del cliente que determina cada decisión, acción y tarea que realizamos. Para lograr este objetivo, efectuamos tareas proactivas de nuestros productos, y servicios. Aplicamos tecnología de información disponible, lo cual nos ayuda a mejorar el proceso de la toma de decisiones.
 			</div>
@@ -334,7 +362,7 @@
 
 </div>
 <!-- end gallery -->
-				<small class="text-muted text-center" style="padding-left:195px;">Click en las imagenes para ampliar</small>
+				<small class="text-muted text-center" style="padding-left:350px;">Click en las imagenes para ampliar</small>
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container -->
@@ -765,8 +793,7 @@
 
 	<!--google map loads here-->
 	<div class="wow softFadeInUp animated text-center" id="map" data-wow-delay=".5s">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.9946149513053!2d-99.64684608556715!3d19.282600386969765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd898e053c8f5b%3A0xa08fa06951afdbdf!2sRep.%20de%20Colombia%20301%2C%20Am%C3%A9ricas%20C%C3%A1rdenas%2C%2050130%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1591140448079!5m2!1ses-419!2smx" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d941.4994481569246!2d-99.6445728!3d19.2824622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd898e1a9ee7e1%3A0x3d11b7ad4e5a5cc3!2sRep.%20de%20Colombia%20301-a%2C%20Am%C3%A9ricas%20C%C3%A1rdenas%2C%2050130%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1593106211276!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	</div>
 
 	<div id="contact-details" class="container">
 		<div class="row">
@@ -975,6 +1002,44 @@
 <a href="#" id="toTop">
 	<i class="fa fa-angle-up"></i>
 </a>
+
+
+
+
+
+
+<!-- MODALS SECTION -->
+
+<!-- Modal INSTALACIONES -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h3 class="modal-title" id="exampleModalLabel">INSTALACIONES</h3>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="row row-cols-3">
+				<img src="images/Modal/Hotel.jpg" width="40%">
+				<div class="col"><div class="speech-bubble"> ... el texto a mostrar ... </div></div>
+				
+				
+			</div>
+			
+			
+		  
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+<!--  -->
 
 
 <!-- BEGIN JS FILES -->
