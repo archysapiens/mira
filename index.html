@@ -226,7 +226,7 @@
 			<div class="internet-marketing block wow softFadeInUp animated col-md-4" data-wow-delay=".7s">
 
 				<div class="iconXlg circle radial-out" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">
-					<i class="fas fa-hammer" style="cursor: pointer"></i>
+					<i class="fas fa-hotel"></i>
 				</div>
 
 				<div class="service-title">
@@ -1405,7 +1405,7 @@
 		</div>
 		<div class="modal-body">
 			<div class="row row-cols-2 text-center">
-				<div class="img-magnifier-container">
+				<div class="img-magnifier-container" style="justify-content: center;">
 					<img id="myimage2" src="images/Modal/Hoteles.png" width="600" height="400">
 				  </div>
 					<div class="col-md-4 ml-auto">	
@@ -1429,7 +1429,9 @@
 		</div>
 		<div class="modal-body">
 			<div class="row row-cols-2 text-center">
-				<img src="images/Modal/sanidad.png" width="120%" height="120%" class="position-center">
+				<div class="img-magnifier-container">
+				<img id="myimage3"src="images/Modal/sanidad.png" width="600" height="400" class="position-center">
+			</div>
 					<div class="col-md-4 ml-auto">	
 				</div>
 			</div>
@@ -1532,6 +1534,11 @@
 		<script>
 			/* Execute the magnify function: */
 			magnify("myimage2", 2.5);
+			/* Specify the id of the image, and the strength of the magnifier glass: */
+		</script>
+		<script>
+			/* Execute the magnify function: */
+			magnify("myimage3", 2.5);
 			/* Specify the id of the image, and the strength of the magnifier glass: */
 		</script>
 
