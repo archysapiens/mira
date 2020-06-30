@@ -1219,7 +1219,7 @@
 <!-- MODALS SECTION -->
 
 <!-- Modal INSTALACIONES -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: scroll;">
 	<div class="modal-dialog modal-lg">
 	  <div class="modal-content">
 		<div class="modal-header">
@@ -1270,11 +1270,15 @@
 
 				</div>
 
+				<div class="row row-cols-2">
+					<a data-toggle="modal" data-target="#Hotel" style="cursor: pointer;" data-dismiss="modal"><h3><strong>Leer más...</strong></h3></a>
+				</div>
+
 			</div>
 		</div>
 
 		<div class="modal-footer">
-		  <button type="button" class="btn btn-danger" style="cursor: pointer;">Cerrar</button>
+		  <button type="button" class="btn btn-danger" style="cursor: pointer;" data-dismiss="modal">Cerrar</button>
 		</div>
 	  </div>
 	</div>
@@ -1282,7 +1286,7 @@
 
 	
 <!-- Modal CONSTRUCCIÓN CIVIL -->
-<div class="modal fade" id="Construccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Construccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: scroll;">
 	<div class="modal-dialog modal-lg">
 	  <div class="modal-content">
 		<div class="modal-header">
@@ -1333,7 +1337,7 @@
 				</div>
 
 				<div class="row row-cols-2">
-					<a href="#!" data-toggle="modal" data-target="#Residencia" style="cursor: pointer"><h3><strong>Leer más...</strong></h3></a>
+					<a data-toggle="modal" data-target="#Residencia" style="cursor: pointer;" data-dismiss="modal"><h3><strong>Leer más...</strong></h3></a>
 				</div>
 
 			</div>
@@ -1349,7 +1353,7 @@
 
 <!-- IMAGEN DE SERVICIOS RESIDENCIALES EN MODAL -->
   <!-- Modal -->
-  <div class="modal fade" id="Residencia" tabindex="-1" role="dialog" aria-labelledby="sanidadLabel" aria-hidden="true">
+  <div class="modal fade" id="Residencia" tabindex="-1" role="dialog" aria-labelledby="sanidadLabel" aria-hidden="true" style="overflow-y: scroll;">
 	<div class="modal-dialog modal-lg">
 	  <div class="modal-content">
 		<div class="modal-header">
@@ -1358,6 +1362,28 @@
 		<div class="modal-body">
 			<div class="row row-cols-2 text-center">
 				<img src="images/Modal/Residenciales.png" width="120%" height="130%" class="position-center">
+					<div class="col-md-4 ml-auto">	
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" style="cursor: pointer;" data-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- IMAGEN DE SERVICIOS DE HOTELES EN MODAL -->
+  <!-- Modal -->
+  <div class="modal fade" id="Hotel" tabindex="-1" role="dialog" aria-labelledby="sanidadLabel" aria-hidden="true" style="overflow-y: scroll;">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h3 class="modal-title" id="Hotel"><b>Servicio de Hoteles</b></h3><img src="images/Mira-Logo.png" width="10%">
+		</div>
+		<div class="modal-body">
+			<div class="row row-cols-2 text-center">
+				<img src="images/Modal/Hoteles.png" width="120%" height="130%" class="position-center">
 					<div class="col-md-4 ml-auto">	
 				</div>
 			</div>
