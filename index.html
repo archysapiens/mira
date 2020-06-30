@@ -83,8 +83,8 @@
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 </style>
 
@@ -1380,7 +1380,7 @@
 		<div class="modal-body">
 			<div class="row row-cols-2 text-center">
 				<div class="img-magnifier-container">
-					<img id="myimage" src="images/Modal/Hoteles.png" width="600" height="400" alt="Girl">
+					<img id="myimage" src="images/Modal/Residenciales.png" width="600" height="400">
 				  </div>
 					<div class="col-md-4 ml-auto">	
 				</div>
@@ -1405,7 +1405,9 @@
 		</div>
 		<div class="modal-body">
 			<div class="row row-cols-2 text-center">
-				<img src="images/Modal/Hoteles.png" width="120%" height="130%" class="position-center">
+				<div class="img-magnifier-container">
+					<img id="myimage2" src="images/Modal/Hoteles.png" width="600" height="400">
+				  </div>
 					<div class="col-md-4 ml-auto">	
 				</div>
 			</div>
@@ -1524,7 +1526,12 @@
 
 		<script>
 			/* Execute the magnify function: */
-			magnify("myimage", 3);
+			magnify("myimage", 2.5);
+			/* Specify the id of the image, and the strength of the magnifier glass: */
+		</script>
+		<script>
+			/* Execute the magnify function: */
+			magnify("myimage2", 2.5);
 			/* Specify the id of the image, and the strength of the magnifier glass: */
 		</script>
 
