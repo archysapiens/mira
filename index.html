@@ -7,7 +7,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+	maximum-scale=1.0, user-scalable=no" /> 
 
 
 	<title>  MIRA - Inicio </title>
@@ -58,7 +59,15 @@
 			width: 0;
 			}
 	</style>
-	
+
+	<!-- RELACIÓN ASPECTO DE LA IMAGEN -->
+	<style>
+		#imagewh {
+			height: 500px;
+			max-width: 100%;
+				}
+	</style>
+
 
 <!--BUBBLES
 
@@ -87,6 +96,19 @@
   height: 180px;
 }
 </style>
+
+<style>
+	.colorear { 
+	background-image: linear-gradient(
+		rgba(23, 129, 199, 0.7), 
+		rgba(23, 129, 199, 0.7)
+		),
+	url(images/oficina.jpg); 
+	height: 500px;
+	max-width: 100%;
+}
+</style>
+
 
 </head>
 
@@ -163,7 +185,7 @@
 						<div class="slide text-center owl-lazy" data-src="images/slider2.png">
 							<div class="content">
 								<div class="container" style="justify-content: center;">
-									<h1 class="amSlideInRight" style="text-align: left; margin-left: 270px;"><strong>Manufactura, <br>Ingeniería, <br>Remodelación <br>Y Arquitectura. <font size="4" style="display: inline;">S.A. de C.V.</font></strong></h1>
+									<h1 class="amSlideInRight" style="text-align: left; margin-left: 270px;"><strong>Manufactura, <br>Ingeniería, <br>Remodelación Y<br> Arquitectura. <font size="4" style="display: inline;">S.A. de C.V.</font></strong></h1>
 								</div>
 				</div>
 			</div>
@@ -408,6 +430,32 @@
 </section>
 <!-- END ABOUT SECTION-->
 
+	<section class="section bg-grey" style="margin-top: -150px;">
+	<div class="container">
+
+		<div  class="carousel slide wow softFadeInUp animated" data-ride="carousel">
+			<div class="carousel-inner" >
+				<div class="colorear" >
+					<div style="text-align: center;">
+						<div>
+							<br>
+							<h1 style="color:#FFF; margin-bottom: 30px;">¿DÓNDE?</h1>
+							
+							<h4 style="color:#FFF;"><strong>Oficinas</strong></h4>
+							<h4 style="color:#FFF;"><strong>Condominios</strong></h4>
+							<h4 style="color:#FFF;"><strong>Escuelas</strong></h4>
+							<h4 style="color:#FFF;"><strong>Restaurantes</strong></h4>
+							<h4 style="color:#FFF;"><strong>Centros Comerciales</strong></h4>
+							<h4 style="color:#FFF;"><strong>Industria Alimentaria</strong></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	</section>
 
 
 
@@ -871,9 +919,14 @@
 					<i class="fa fa-envelope-o"></i>
 				</div>
 				<address>
-						<strong>Ventas &amp; Soporte</strong><br>
-						migmira@prodigy.net.mx <br>
-				</address>
+					<strong>Ventas &amp; Soporte</strong><br>
+					
+						migmira@prodigy.net.mx
+						hugmira@prodigy.net.mx
+						mirasa@prodigy.net.mx
+						rafmira@prodigy.net.mx
+					</div>
+			</address>
 			</div>
 			<!--end email -->
 
